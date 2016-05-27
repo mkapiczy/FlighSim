@@ -1,0 +1,4 @@
+<map id="Plane" name="Plane">
+<area shape="rect" id="node3" href="$class_my_plane.html" title="Klasa reprezentujaca obiekt samolotu podczas symulacji lotu. " alt="" coords="5,155,79,181"/>
+<area shape="rect" id="node2" href="$class_vehicle.html" title="Abstrakcyjna klasa reprezentująca pojazd. " alt="" coords="9,5,75,32"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="Wind.h" name="Wind.h">
+<area shape="rect" id="node2" href="$_plane_8h.html" title="Plik nagłówkowy klasy Plane. " alt="" coords="764,155,831,181"/>
+<area shape="rect" id="node7" href="$_engine_8h.html" title="Plik nagłowkowy klasy Engine. " alt="" coords="926,379,999,405"/>
+<area shape="rect" id="node17" href="$_vehicle_8h.html" title="Plik nagłówkowy klasy Vehicle. " alt="" coords="506,80,582,107"/>
+<area shape="rect" id="node19" href="$_wind_8cpp.html" title="Plik źródłowy klasy Wind. " alt="" coords="1152,80,1229,107"/>
+<area shape="rect" id="node3" href="$_airport_8h.html" title="Plik nagłowkowy klasy Airport. " alt="" coords="443,229,514,256"/>
+<area shape="rect" id="node6" href="$_graphic_engine_8h.html" title="Plik nagłówkowy klasy GraphicEngine. " alt="" coords="755,304,874,331"/>
+<area shape="rect" id="node8" href="$_engine_8cpp.html" title="Plik źródłowy klasy Engine. " alt="" coords="527,528,614,555"/>
+<area shape="rect" id="node11" href="$_graphic_engine_8cpp.html" title="Plik źródłowy klasy GraphicEngine. " alt="" coords="921,528,1053,555"/>
+<area shape="rect" id="node14" href="$_plane_8cpp.html" title="Plik źródłowy klasy Plane. " alt="" coords="477,304,557,331"/>
+<area shape="rect" id="node16" href="$_my_plane_8h.html" title="Plik nagłówkowy klasy MyPlane. " alt="" coords="755,229,839,256"/>
+<area shape="rect" id="node4" href="$_airport_8cpp.html" title="Plik źródłowy klasy Airport. " alt="" coords="317,304,403,331"/>
+<area shape="rect" id="node5" href="$_bus_8cpp.html" title="Plik źródłowy klasy Bus. " alt="" coords="171,304,242,331"/>
+<area shape="rect" id="node13" href="$_my_plane_8cpp.html" title="Plik źródłowy klasy MyPlane. " alt="" coords="581,304,680,331"/>
+<area shape="rect" id="node15" href="$_vehicle_8cpp.html" title="Plik źródłowy klasy Vehicle. " alt="" coords="5,304,96,331"/>
+<area shape="rect" id="node9" href="$_simulation_8h.html" title="Plik nagłówkowy klasy Simulation. " alt="" coords="710,453,805,480"/>
+<area shape="rect" id="node12" href="$_simulation_8cpp.html" title="Plik źródłowy klasy Simulation. " alt="" coords="789,528,897,555"/>
+<area shape="rect" id="node10" href="$_flight_sim__v_83_8cpp.html" title="FlightSim_v.3.cpp" alt="" coords="639,528,764,555"/>
+<area shape="rect" id="node18" href="$_bus_8h.html" title="Plik nagłówkowy klasy Bus. " alt="" coords="516,155,572,181"/>
+</map>

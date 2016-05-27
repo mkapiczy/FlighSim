@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>FlightSim: Plik źródłowy MyPlane.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FlightSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_my_plane_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">MyPlane.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_my_plane_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stdafx_8h.html">stdafx.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_my_plane_8h.html">MyPlane.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_airport_8h.html">Airport.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="code" href="class_my_plane.html#a7e569cd992406685fb23ceec7f68e3fe">MyPlane::State</a> <a class="code" href="class_my_plane.html#a39d63fb4c6762aa0b5eaaa9b2a6386b7">MyPlane::state</a> = <a class="code" href="class_my_plane.html#a7e569cd992406685fb23ceec7f68e3fea358dc1836c4d830af361cb3f28a77625">MyPlane::ASCENDING</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_my_plane.html#a286cad8a66922b185809b9518ae07d93">   12</a></span>&#160;<a class="code" href="class_my_plane.html#a286cad8a66922b185809b9518ae07d93">MyPlane::MyPlane</a>()</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_my_plane.html#a3eaace7c399d9ffbfbd4dc6e8c56f37f">   16</a></span>&#160;<a class="code" href="class_my_plane.html#a286cad8a66922b185809b9518ae07d93">MyPlane::MyPlane</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, sf::Vector2f position)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_plane.html#abeb70ff41d552834452116d3ce9a1980">next</a> = NULL;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    this-&gt;<span class="keywordtype">id</span> = <a class="code" href="class_vehicle.html#a7421a7a2d98b4ec6dfabd1041261aa03">id</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    this-&gt;position.x = position.x;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    this-&gt;position.y = position.y;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    this-&gt;<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_my_plane.html#aed4f8adb9f9419837bf75410ac825fc9">   25</a></span>&#160;<a class="code" href="class_my_plane.html#aed4f8adb9f9419837bf75410ac825fc9">MyPlane::~MyPlane</a>()</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_my_plane.html#ab23a6ac5db6a1a9301918a234fff3817">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_plane.html#a3a07da89ca85ad949a3db1cc3aaa5acd">MyPlane::move</a>(<span class="keywordtype">double</span> dt)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">double</span> vscale = 100;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_my_plane.html#a14abb2b8eda98586d3ff4bdffd734583">height</a> = abs(<a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y - 2160)*7.5;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a47e74c080de20a4925bc6e71c968f5bf">windDirection</a> &gt;= -90 &amp;&amp; <a class="code" href="class_vehicle.html#a47e74c080de20a4925bc6e71c968f5bf">windDirection</a> &lt;= 90)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_my_plane.html#a2662e22c78cc1117697ed0c6a24377f8">v</a> = (<a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a> - <a class="code" href="class_vehicle.html#a4e093b93ad03924a10c6a375847d7149">windSpeed</a>) * 1000 / 3600;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((<a class="code" href="class_vehicle.html#a47e74c080de20a4925bc6e71c968f5bf">windDirection</a> &gt;= -180 &amp;&amp; <a class="code" href="class_vehicle.html#a47e74c080de20a4925bc6e71c968f5bf">windDirection</a> &lt; -90) || (windDirection &lt;= 180 &amp;&amp; windDirection&gt;90))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_my_plane.html#a2662e22c78cc1117697ed0c6a24377f8">v</a> = (<a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a> + <a class="code" href="class_vehicle.html#a4e093b93ad03924a10c6a375847d7149">windSpeed</a>) * 1000 / 3600;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_vehicle.html#a4c5cac815a442c4acdf0c2a1523e48fc">gravity</a> = 9.81;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Pz = 0.5*Cz*S*ro*<a class="code" href="class_my_plane.html#a2662e22c78cc1117697ed0c6a24377f8">v</a>*<a class="code" href="class_my_plane.html#a2662e22c78cc1117697ed0c6a24377f8">v</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Fg = mass*<a class="code" href="class_vehicle.html#a4c5cac815a442c4acdf0c2a1523e48fc">gravity</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_my_plane.html#a922915d7f002e36c8aee95d852b8ba2a">speed</a>.y += (Pz - Fg)*dt / mass;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_my_plane.html#a0fc37b97b5c88a68099d47f9d2ff4e06">fuel</a> &lt; 35000 &amp;&amp; <a class="code" href="class_my_plane.html#a8d99ee73290584e75576f1ee86496d0e">fuelalarm</a> == <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\r&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Malo paliwa! Podchodze do ladowania!&quot;</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="class_my_plane.html#a39d63fb4c6762aa0b5eaaa9b2a6386b7">state</a> = State::DESCENDING;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_my_plane.html#a8d99ee73290584e75576f1ee86496d0e">fuelalarm</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_my_plane.html#a39d63fb4c6762aa0b5eaaa9b2a6386b7">state</a> == State::ASCENDING)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> &gt; -10) <a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> -= 0.05;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (Pz &lt; Fg)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a> += 1;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (Pz &gt;= Fg &amp;&amp; velocity &lt; 900 &amp;&amp; position.y&gt;800)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a> += 0.25;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y &lt;= 800)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="class_my_plane.html#a39d63fb4c6762aa0b5eaaa9b2a6386b7">state</a> = State::MAINTAINING;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.x += <a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a>*cos((<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> * 3.14) / 180.0f)*dt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y += <a class="code" href="class_my_plane.html#a922915d7f002e36c8aee95d852b8ba2a">speed</a>.y*sin((<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> * 3.14) / 180.0f)*dt;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_my_plane.html#a39d63fb4c6762aa0b5eaaa9b2a6386b7">state</a> == State::DESCENDING)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">if</span> (Pz &gt; 5 * Fg)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a> -= 0.25;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> &lt; 1) <a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> += 0.05;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> &gt; 1) <a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> -= 0.05;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span> (Pz &lt;= 5 * Fg)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> &lt; 3) <a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> += 0.05;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> &gt; 3) <a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> -= 0.05;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a> &gt; 400) <a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a> -= 0.25;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y &gt; 1700)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="class_my_plane.html#a39d63fb4c6762aa0b5eaaa9b2a6386b7">state</a> = State::MAINTAINING;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <a class="code" href="class_my_plane.html#a8d99ee73290584e75576f1ee86496d0e">fuelalarm</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.x += <a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a>*cos((<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> * 3.14) / 180.0f)*dt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y += <a class="code" href="class_my_plane.html#a922915d7f002e36c8aee95d852b8ba2a">speed</a>.y*sin((<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> * 3.14) / 180.0f)*dt;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_my_plane.html#a39d63fb4c6762aa0b5eaaa9b2a6386b7">state</a> == State::MAINTAINING)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_my_plane.html#a0fc37b97b5c88a68099d47f9d2ff4e06">fuel</a> &lt; 35000 &amp;&amp; <a class="code" href="class_my_plane.html#a8d99ee73290584e75576f1ee86496d0e">fuelalarm</a> == <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;\r&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Malo paliwa! Podchodze do ladowania!&quot;</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="class_my_plane.html#a39d63fb4c6762aa0b5eaaa9b2a6386b7">state</a> = State::DESCENDING;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> &lt; 0) <a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> += 0.05;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> &gt; 0) <a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> -= 0.05;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y &gt;= 1700) <a class="code" href="class_my_plane.html#a39d63fb4c6762aa0b5eaaa9b2a6386b7">state</a> = State::LANDING;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.x += <a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a>*cos((<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> * 3.14) / 180.0f)*dt;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y += <a class="code" href="class_my_plane.html#a922915d7f002e36c8aee95d852b8ba2a">speed</a>.y*sin((<a class="code" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> * 3.14) / 180.0f)*dt;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y &lt; 600) <a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y = 600;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y &gt; 2100)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.y = 2100;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.x &gt;= 1920)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.x = 640;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.x &lt; 640)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>.x = 1920;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="class_my_plane.html#a5e924efb3d2f4d61aabdf34ffd1093b3">distance</a> += <a class="code" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a> / 10 * dt;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="class_my_plane.html#a35f990f84e7fc20d83b8346068c91a18">  151</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_my_plane.html#a35f990f84e7fc20d83b8346068c91a18">MyPlane::consumefuel</a>()</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_my_plane.html#a0fc37b97b5c88a68099d47f9d2ff4e06">fuel</a> &gt; 0) <a class="code" href="class_my_plane.html#a0fc37b97b5c88a68099d47f9d2ff4e06">fuel</a> = (50000 - (<a class="code" href="class_my_plane.html#a5e924efb3d2f4d61aabdf34ffd1093b3">distance</a> * 5));</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">else</span> printf(<span class="stringliteral">&quot;\nBrak paliwa!\n&quot;</span>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
+<div class="ttc" id="class_my_plane_html_aed4f8adb9f9419837bf75410ac825fc9"><div class="ttname"><a href="class_my_plane.html#aed4f8adb9f9419837bf75410ac825fc9">MyPlane::~MyPlane</a></div><div class="ttdeci">~MyPlane()</div><div class="ttdoc">Destruktor. </div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8cpp_source.html#l00025">MyPlane.cpp:25</a></div></div>
+<div class="ttc" id="class_my_plane_html_a8d99ee73290584e75576f1ee86496d0e"><div class="ttname"><a href="class_my_plane.html#a8d99ee73290584e75576f1ee86496d0e">MyPlane::fuelalarm</a></div><div class="ttdeci">bool fuelalarm</div><div class="ttdoc">Zmienna odpowiadajaca za sygnalizacje niskiego stanu paliwa. </div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8h_source.html#l00034">MyPlane.h:34</a></div></div>
+<div class="ttc" id="class_vehicle_html_a47e74c080de20a4925bc6e71c968f5bf"><div class="ttname"><a href="class_vehicle.html#a47e74c080de20a4925bc6e71c968f5bf">Vehicle::windDirection</a></div><div class="ttdeci">double windDirection</div><div class="ttdoc">Czujnik kierunku wiatru. </div><div class="ttdef"><b>Definition:</b> <a href="_vehicle_8h_source.html#l00028">Vehicle.h:28</a></div></div>
+<div class="ttc" id="_my_plane_8h_html"><div class="ttname"><a href="_my_plane_8h.html">MyPlane.h</a></div><div class="ttdoc">Plik nagłówkowy klasy MyPlane. </div></div>
+<div class="ttc" id="class_my_plane_html_a286cad8a66922b185809b9518ae07d93"><div class="ttname"><a href="class_my_plane.html#a286cad8a66922b185809b9518ae07d93">MyPlane::MyPlane</a></div><div class="ttdeci">MyPlane()</div><div class="ttdoc">Konstruktor domyślny. </div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8cpp_source.html#l00012">MyPlane.cpp:12</a></div></div>
+<div class="ttc" id="class_my_plane_html_a7e569cd992406685fb23ceec7f68e3fea358dc1836c4d830af361cb3f28a77625"><div class="ttname"><a href="class_my_plane.html#a7e569cd992406685fb23ceec7f68e3fea358dc1836c4d830af361cb3f28a77625">MyPlane::ASCENDING</a></div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8h_source.html#l00040">MyPlane.h:40</a></div></div>
+<div class="ttc" id="class_vehicle_html_a4c5cac815a442c4acdf0c2a1523e48fc"><div class="ttname"><a href="class_vehicle.html#a4c5cac815a442c4acdf0c2a1523e48fc">Vehicle::gravity</a></div><div class="ttdeci">double gravity</div><div class="ttdoc">Przyśpieszenie ziemskie. </div><div class="ttdef"><b>Definition:</b> <a href="_vehicle_8h_source.html#l00034">Vehicle.h:34</a></div></div>
+<div class="ttc" id="class_vehicle_html_a7421a7a2d98b4ec6dfabd1041261aa03"><div class="ttname"><a href="class_vehicle.html#a7421a7a2d98b4ec6dfabd1041261aa03">Vehicle::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">Id pojazdu. </div><div class="ttdef"><b>Definition:</b> <a href="_vehicle_8h_source.html#l00032">Vehicle.h:32</a></div></div>
+<div class="ttc" id="class_my_plane_html_a2662e22c78cc1117697ed0c6a24377f8"><div class="ttname"><a href="class_my_plane.html#a2662e22c78cc1117697ed0c6a24377f8">MyPlane::v</a></div><div class="ttdeci">double v</div><div class="ttdoc">Prędkość względem wiatru = velocity - wind->speed;. </div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8h_source.html#l00060">MyPlane.h:60</a></div></div>
+<div class="ttc" id="class_vehicle_html_a4e093b93ad03924a10c6a375847d7149"><div class="ttname"><a href="class_vehicle.html#a4e093b93ad03924a10c6a375847d7149">Vehicle::windSpeed</a></div><div class="ttdeci">double windSpeed</div><div class="ttdoc">Czujnik prędkości wiatru. </div><div class="ttdef"><b>Definition:</b> <a href="_vehicle_8h_source.html#l00030">Vehicle.h:30</a></div></div>
+<div class="ttc" id="stdafx_8h_html"><div class="ttname"><a href="stdafx_8h.html">stdafx.h</a></div></div>
+<div class="ttc" id="class_my_plane_html_a35f990f84e7fc20d83b8346068c91a18"><div class="ttname"><a href="class_my_plane.html#a35f990f84e7fc20d83b8346068c91a18">MyPlane::consumefuel</a></div><div class="ttdeci">void consumefuel()</div><div class="ttdoc">Spalanie paliwa. </div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8cpp_source.html#l00151">MyPlane.cpp:151</a></div></div>
+<div class="ttc" id="class_vehicle_html_a53bca1ebf9ea94acecc7cf35f2a6be35"><div class="ttname"><a href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">Vehicle::velocity</a></div><div class="ttdeci">double velocity</div><div class="ttdoc">Prędkość </div><div class="ttdef"><b>Definition:</b> <a href="_vehicle_8h_source.html#l00022">Vehicle.h:22</a></div></div>
+<div class="ttc" id="class_my_plane_html_a5e924efb3d2f4d61aabdf34ffd1093b3"><div class="ttname"><a href="class_my_plane.html#a5e924efb3d2f4d61aabdf34ffd1093b3">MyPlane::distance</a></div><div class="ttdeci">double distance</div><div class="ttdoc">Przebyty dystans. </div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8h_source.html#l00056">MyPlane.h:56</a></div></div>
+<div class="ttc" id="class_plane_html_abeb70ff41d552834452116d3ce9a1980"><div class="ttname"><a href="class_plane.html#abeb70ff41d552834452116d3ce9a1980">Plane::next</a></div><div class="ttdeci">Plane * next</div><div class="ttdoc">Wskaźnik na kolejny element listy jednokierunkowej elementów Plane. </div><div class="ttdef"><b>Definition:</b> <a href="_plane_8h_source.html#l00043">Plane.h:43</a></div></div>
+<div class="ttc" id="_airport_8h_html"><div class="ttname"><a href="_airport_8h.html">Airport.h</a></div><div class="ttdoc">Plik nagłowkowy klasy Airport. </div></div>
+<div class="ttc" id="class_plane_html_a3a07da89ca85ad949a3db1cc3aaa5acd"><div class="ttname"><a href="class_plane.html#a3a07da89ca85ad949a3db1cc3aaa5acd">Plane::move</a></div><div class="ttdeci">void move()</div><div class="ttdoc">Logika ruchu samolotu na lotnisku. </div><div class="ttdef"><b>Definition:</b> <a href="_plane_8cpp_source.html#l00027">Plane.cpp:27</a></div></div>
+<div class="ttc" id="class_vehicle_html_a7f686ad993a66d2bf08e68a18a35aaf3"><div class="ttname"><a href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">Vehicle::rotation</a></div><div class="ttdeci">double rotation</div><div class="ttdoc">Obrót. </div><div class="ttdef"><b>Definition:</b> <a href="_vehicle_8h_source.html#l00024">Vehicle.h:24</a></div></div>
+<div class="ttc" id="class_my_plane_html_a39d63fb4c6762aa0b5eaaa9b2a6386b7"><div class="ttname"><a href="class_my_plane.html#a39d63fb4c6762aa0b5eaaa9b2a6386b7">MyPlane::state</a></div><div class="ttdeci">static State state</div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8h_source.html#l00052">MyPlane.h:52</a></div></div>
+<div class="ttc" id="class_my_plane_html_a0fc37b97b5c88a68099d47f9d2ff4e06"><div class="ttname"><a href="class_my_plane.html#a0fc37b97b5c88a68099d47f9d2ff4e06">MyPlane::fuel</a></div><div class="ttdeci">double fuel</div><div class="ttdoc">Pojemnosc baku - 50 ton. </div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8h_source.html#l00062">MyPlane.h:62</a></div></div>
+<div class="ttc" id="class_vehicle_html_a26837a872f4141e1eef8710606512d80"><div class="ttname"><a href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">Vehicle::position</a></div><div class="ttdeci">sf::Vector2f position</div><div class="ttdoc">Pozycja pojazdu. </div><div class="ttdef"><b>Definition:</b> <a href="_vehicle_8h_source.html#l00020">Vehicle.h:20</a></div></div>
+<div class="ttc" id="class_my_plane_html_a7e569cd992406685fb23ceec7f68e3fe"><div class="ttname"><a href="class_my_plane.html#a7e569cd992406685fb23ceec7f68e3fe">MyPlane::State</a></div><div class="ttdeci">State</div><div class="ttdoc">Typ wyliczeniowy reprezentujący stan samolotu. </div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8h_source.html#l00039">MyPlane.h:39</a></div></div>
+<div class="ttc" id="class_my_plane_html_a14abb2b8eda98586d3ff4bdffd734583"><div class="ttname"><a href="class_my_plane.html#a14abb2b8eda98586d3ff4bdffd734583">MyPlane::height</a></div><div class="ttdeci">double height</div><div class="ttdoc">Wysokosc, na jaka wznosi sie samolot. </div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8h_source.html#l00058">MyPlane.h:58</a></div></div>
+<div class="ttc" id="class_my_plane_html_a922915d7f002e36c8aee95d852b8ba2a"><div class="ttname"><a href="class_my_plane.html#a922915d7f002e36c8aee95d852b8ba2a">MyPlane::speed</a></div><div class="ttdeci">sf::Vector2f speed</div><div class="ttdoc">Predkość samolotu. </div><div class="ttdef"><b>Definition:</b> <a href="_my_plane_8h_source.html#l00054">MyPlane.h:54</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_my_plane_8cpp.html">MyPlane.cpp</a></li>
+    <li class="footer">Wygenerowano N, 14 cze 2015 15:38:33 dla FlightSim programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

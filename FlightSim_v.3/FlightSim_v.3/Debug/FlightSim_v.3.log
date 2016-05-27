@@ -1,0 +1,48 @@
+﻿  Airport.cpp
+  Generating Code...
+  Compiling...
+  Vehicle.cpp
+  Plane.cpp
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(40): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(50): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(64): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(72): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(73): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(82): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(83): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(89): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(90): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(100): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(101): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(113): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(114): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(124): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(125): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(135): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(143): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(144): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(155): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(163): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\plane.cpp(164): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+  MyPlane.cpp
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\myplane.cpp(52): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\myplane.cpp(82): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\myplane.cpp(83): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\myplane.cpp(112): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\myplane.cpp(113): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\myplane.cpp(131): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\myplane.cpp(132): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+  Bus.cpp
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\bus.cpp(53): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\bus.cpp(54): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\bus.cpp(78): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\bus.cpp(79): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\bus.cpp(103): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+c:\users\miix\documents\visual studio 2013\projects\flightsim_v.3\flightsim_v.3\bus.cpp(104): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Simulation.cpp
+  GraphicEngine.cpp
+  FlightSim_v.3.cpp
+  Engine.cpp
+  FlightSim_v.3.vcxproj -> C:\Users\Miix\Documents\Visual Studio 2013\Projects\FlightSim_v.3\Debug\FlightSim_v.3.exe

@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>FlightSim: Dokumentacja klasy Airport</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FlightSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_airport.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-attribs">Atrybuty publiczne</a> &#124;
+<a href="#pub-static-attribs">Statyczne atrybuty publiczne</a> &#124;
+<a href="class_airport-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Airport</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa reprezentujaca lotnisko.  
+ <a href="class_airport.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_airport_8h_source.html">Airport.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla Airport:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_airport__coll__graph.png" border="0" usemap="#_airport_coll__map" alt="Collaboration graph"/></div>
+<map name="_airport_coll__map" id="_airport_coll__map">
+<area shape="rect" id="node2" href="class_plane.html" title="Klasa reprezentujaca obiekt samolotu na lotnisku. " alt="" coords="5,81,60,108"/><area shape="rect" id="node3" href="class_vehicle.html" title="Abstrakcyjna klasa reprezentująca pojazd. " alt="" coords="75,5,140,32"/><area shape="rect" id="node4" href="class_bus.html" title="Klasa reprezentujaca Autobus. " alt="" coords="138,81,183,108"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a2fc0f2402c94225b9deaf76176bb887f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a2fc0f2402c94225b9deaf76176bb887f">Airport</a> ()</td></tr>
+<tr class="memdesc:a2fc0f2402c94225b9deaf76176bb887f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <a href="#a2fc0f2402c94225b9deaf76176bb887f">Więcej...</a><br /></td></tr>
+<tr class="separator:a2fc0f2402c94225b9deaf76176bb887f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c42073a186171586f3ac66d84af97ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a2c42073a186171586f3ac66d84af97ca">~Airport</a> ()</td></tr>
+<tr class="memdesc:a2c42073a186171586f3ac66d84af97ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <a href="#a2c42073a186171586f3ac66d84af97ca">Więcej...</a><br /></td></tr>
+<tr class="separator:a2c42073a186171586f3ac66d84af97ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9ccf65781133b1617d114b8b784d31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#afb9ccf65781133b1617d114b8b784d31">addPlane</a> (<a class="el" href="class_plane.html">Plane</a> *plane)</td></tr>
+<tr class="memdesc:afb9ccf65781133b1617d114b8b784d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodanie samolotu do listy.  <a href="#afb9ccf65781133b1617d114b8b784d31">Więcej...</a><br /></td></tr>
+<tr class="separator:afb9ccf65781133b1617d114b8b784d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad14b2b0c3f7ded352e82602cb8a75ad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#ad14b2b0c3f7ded352e82602cb8a75ad8">removePlane</a> ()</td></tr>
+<tr class="memdesc:ad14b2b0c3f7ded352e82602cb8a75ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuniecie samolotu z listy.  <a href="#ad14b2b0c3f7ded352e82602cb8a75ad8">Więcej...</a><br /></td></tr>
+<tr class="separator:ad14b2b0c3f7ded352e82602cb8a75ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02940b12a05b87356faa6e3c1808df81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a02940b12a05b87356faa6e3c1808df81">clear</a> ()</td></tr>
+<tr class="memdesc:a02940b12a05b87356faa6e3c1808df81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czyszczenie listy.  <a href="#a02940b12a05b87356faa6e3c1808df81">Więcej...</a><br /></td></tr>
+<tr class="separator:a02940b12a05b87356faa6e3c1808df81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878f9374678c7aa3819b0e9a1564ede7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a878f9374678c7aa3819b0e9a1564ede7">show</a> ()</td></tr>
+<tr class="memdesc:a878f9374678c7aa3819b0e9a1564ede7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pokazanie zawartosci listy.  <a href="#a878f9374678c7aa3819b0e9a1564ede7">Więcej...</a><br /></td></tr>
+<tr class="separator:a878f9374678c7aa3819b0e9a1564ede7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ba309520ef41af0938bf4ab1b7e516"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#ab0ba309520ef41af0938bf4ab1b7e516">refuse</a> ()</td></tr>
+<tr class="memdesc:ab0ba309520ef41af0938bf4ab1b7e516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odmowa wylotu/przylotu.  <a href="#ab0ba309520ef41af0938bf4ab1b7e516">Więcej...</a><br /></td></tr>
+<tr class="separator:ab0ba309520ef41af0938bf4ab1b7e516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ebff829a43be737dbe8e940e747c77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#ad3ebff829a43be737dbe8e940e747c77">full</a> ()</td></tr>
+<tr class="memdesc:ad3ebff829a43be737dbe8e940e747c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lotnisko pelne.  <a href="#ad3ebff829a43be737dbe8e940e747c77">Więcej...</a><br /></td></tr>
+<tr class="separator:ad3ebff829a43be737dbe8e940e747c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87accfa015c2933906eda526e3af9e4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a87accfa015c2933906eda526e3af9e4f">empty</a> ()</td></tr>
+<tr class="memdesc:a87accfa015c2933906eda526e3af9e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lotnisko puste.  <a href="#a87accfa015c2933906eda526e3af9e4f">Więcej...</a><br /></td></tr>
+<tr class="separator:a87accfa015c2933906eda526e3af9e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127af0e0ad80afefcf4b3d27f9ca17aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a127af0e0ad80afefcf4b3d27f9ca17aa">runaway</a> ()</td></tr>
+<tr class="memdesc:a127af0e0ad80afefcf4b3d27f9ca17aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pas wolny.  <a href="#a127af0e0ad80afefcf4b3d27f9ca17aa">Więcej...</a><br /></td></tr>
+<tr class="separator:a127af0e0ad80afefcf4b3d27f9ca17aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df55c76c22c5d5df2d1d7fc2b9f6d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a5df55c76c22c5d5df2d1d7fc2b9f6d6c">land</a> (<a class="el" href="class_vehicle.html">Vehicle</a> *plane)</td></tr>
+<tr class="memdesc:a5df55c76c22c5d5df2d1d7fc2b9f6d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samolot wyladowal.  <a href="#a5df55c76c22c5d5df2d1d7fc2b9f6d6c">Więcej...</a><br /></td></tr>
+<tr class="separator:a5df55c76c22c5d5df2d1d7fc2b9f6d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bed38a6b4c5d628eace8e16cebc0c7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a7bed38a6b4c5d628eace8e16cebc0c7e">depart</a> (<a class="el" href="class_vehicle.html">Vehicle</a> *plane)</td></tr>
+<tr class="memdesc:a7bed38a6b4c5d628eace8e16cebc0c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samolot wylecial.  <a href="#a7bed38a6b4c5d628eace8e16cebc0c7e">Więcej...</a><br /></td></tr>
+<tr class="separator:a7bed38a6b4c5d628eace8e16cebc0c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeba2f40be028dc59cb212c088f88bad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#adeba2f40be028dc59cb212c088f88bad">addBus</a> (<a class="el" href="class_bus.html">Bus</a> *bus)</td></tr>
+<tr class="memdesc:adeba2f40be028dc59cb212c088f88bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodanie autobusu do listy.  <a href="#adeba2f40be028dc59cb212c088f88bad">Więcej...</a><br /></td></tr>
+<tr class="separator:adeba2f40be028dc59cb212c088f88bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b86170851850c263982fd2f697cf1b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a9b86170851850c263982fd2f697cf1b3">removeBus</a> ()</td></tr>
+<tr class="memdesc:a9b86170851850c263982fd2f697cf1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuniecie autobusu z listy.  <a href="#a9b86170851850c263982fd2f697cf1b3">Więcej...</a><br /></td></tr>
+<tr class="separator:a9b86170851850c263982fd2f697cf1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ac464b9dd8df6f6c02fc9120bb1509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a84ac464b9dd8df6f6c02fc9120bb1509">clearbus</a> ()</td></tr>
+<tr class="memdesc:a84ac464b9dd8df6f6c02fc9120bb1509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czyszczenie listy.  <a href="#a84ac464b9dd8df6f6c02fc9120bb1509">Więcej...</a><br /></td></tr>
+<tr class="separator:a84ac464b9dd8df6f6c02fc9120bb1509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atrybuty publiczne</h2></td></tr>
+<tr class="memitem:ad40fe2f08edd178df70b389208fe71b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#ad40fe2f08edd178df70b389208fe71b7">count</a></td></tr>
+<tr class="memdesc:ad40fe2f08edd178df70b389208fe71b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liczba elementow znajdujacych sie na liscie jednokierunkowej.  <a href="#ad40fe2f08edd178df70b389208fe71b7">Więcej...</a><br /></td></tr>
+<tr class="separator:ad40fe2f08edd178df70b389208fe71b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8741024b47db6c2a19b44810c827f02c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a8741024b47db6c2a19b44810c827f02c">nPlanes</a></td></tr>
+<tr class="memdesc:a8741024b47db6c2a19b44810c827f02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liczba obsluzonych przez lotnisko samolotow.  <a href="#a8741024b47db6c2a19b44810c827f02c">Więcej...</a><br /></td></tr>
+<tr class="separator:a8741024b47db6c2a19b44810c827f02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94813a13d52c0d5f0997225038339f67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_plane.html">Plane</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a94813a13d52c0d5f0997225038339f67">front</a></td></tr>
+<tr class="memdesc:a94813a13d52c0d5f0997225038339f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskazniki na poczatek i koniec listy jednokierunkowej typu <a class="el" href="class_plane.html" title="Klasa reprezentujaca obiekt samolotu na lotnisku. ">Plane</a>.  <a href="#a94813a13d52c0d5f0997225038339f67">Więcej...</a><br /></td></tr>
+<tr class="separator:a94813a13d52c0d5f0997225038339f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57803f84582af728507a187254ec2d76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_plane.html">Plane</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a57803f84582af728507a187254ec2d76">back</a></td></tr>
+<tr class="separator:a57803f84582af728507a187254ec2d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2378f4fecd2bca5a4cd3f1d3707a891"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bus.html">Bus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#ab2378f4fecd2bca5a4cd3f1d3707a891">busfront</a></td></tr>
+<tr class="memdesc:ab2378f4fecd2bca5a4cd3f1d3707a891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskazniki na poczatek i koniec listy jednokierunkowej typu <a class="el" href="class_bus.html" title="Klasa reprezentujaca Autobus. ">Bus</a>.  <a href="#ab2378f4fecd2bca5a4cd3f1d3707a891">Więcej...</a><br /></td></tr>
+<tr class="separator:ab2378f4fecd2bca5a4cd3f1d3707a891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f9fda67c7ab98b222afe8f35e7069b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bus.html">Bus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a3f9fda67c7ab98b222afe8f35e7069b7">busback</a></td></tr>
+<tr class="separator:a3f9fda67c7ab98b222afe8f35e7069b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033a38990148ee790fac16aab81d0e5b"><td class="memItemLeft" align="right" valign="top">const sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a033a38990148ee790fac16aab81d0e5b">hangarposition</a> = { 615, 185 }</td></tr>
+<tr class="separator:a033a38990148ee790fac16aab81d0e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9569a024e683a0b4104c1c31030800"><td class="memItemLeft" align="right" valign="top">const sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a7e9569a024e683a0b4104c1c31030800">hangarsize</a> = { 50, 120 }</td></tr>
+<tr class="separator:a7e9569a024e683a0b4104c1c31030800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cc2cf0b7fd17385ff1cb4c96c568c0"><td class="memItemLeft" align="right" valign="top">const sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a90cc2cf0b7fd17385ff1cb4c96c568c0">lrunawayposition</a> = { 415, 300}</td></tr>
+<tr class="separator:a90cc2cf0b7fd17385ff1cb4c96c568c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb9ac991c054cbd263b377e5570421e"><td class="memItemLeft" align="right" valign="top">const sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a6eb9ac991c054cbd263b377e5570421e">lrunawaysize</a> = { 200, 120 }</td></tr>
+<tr class="separator:a6eb9ac991c054cbd263b377e5570421e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4836ebca2db445195d42a74fc09262b"><td class="memItemLeft" align="right" valign="top">const sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#ab4836ebca2db445195d42a74fc09262b">drunawayposition</a> = { 665,300 }</td></tr>
+<tr class="separator:ab4836ebca2db445195d42a74fc09262b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f40f6d1b8a37915041edc24943eca7"><td class="memItemLeft" align="right" valign="top">const sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#aa0f40f6d1b8a37915041edc24943eca7">drunawaysize</a> = { 200, 120 }</td></tr>
+<tr class="separator:aa0f40f6d1b8a37915041edc24943eca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2b810f6fd441ba86d1b1343b5a6809"><td class="memItemLeft" align="right" valign="top">const sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a1b2b810f6fd441ba86d1b1343b5a6809">busstopposition</a> = { 80, 560 }</td></tr>
+<tr class="separator:a1b2b810f6fd441ba86d1b1343b5a6809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Statyczne atrybuty publiczne</h2></td></tr>
+<tr class="memitem:a5a38236f744f93cc780ffca8228f4412"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_airport.html#a5a38236f744f93cc780ffca8228f4412">MAX_CAPACITY</a> =8</td></tr>
+<tr class="memdesc:a5a38236f744f93cc780ffca8228f4412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maksymalna pojemnosc lotniska.  <a href="#a5a38236f744f93cc780ffca8228f4412">Więcej...</a><br /></td></tr>
+<tr class="separator:a5a38236f744f93cc780ffca8228f4412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa reprezentujaca lotnisko. </p>
+<p>Definicja klasy <a class="el" href="class_airport.html" title="Klasa reprezentujaca lotnisko. ">Airport</a> </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00018">18</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a2fc0f2402c94225b9deaf76176bb887f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Airport::Airport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor. </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00010">10</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c42073a186171586f3ac66d84af97ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Airport::~Airport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor. </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00018">18</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="adeba2f40be028dc59cb212c088f88bad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Airport::addBus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_bus.html">Bus</a> *&#160;</td>
+          <td class="paramname"><em>bus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodanie autobusu do listy. </p>
+<p>Funkcja odpowiadajaca za dodanie autobusu do listy jednokierunkowej </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bus</td><td>wskaźnik do obiektu klasy <a class="el" href="class_bus.html" title="Klasa reprezentujaca Autobus. ">Bus</a>, który ma zostać dodany do listy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00143">143</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb9ccf65781133b1617d114b8b784d31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Airport::addPlane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodanie samolotu do listy. </p>
+<p>Funkcja odpowiadajaca za dodanie samolotu do listy jednokierunkowej </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plane</td><td>wskaźnik do obiektu klasy <a class="el" href="class_plane.html" title="Klasa reprezentujaca obiekt samolotu na lotnisku. ">Plane</a>, który ma zostać dodany do listy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00028">28</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02940b12a05b87356faa6e3c1808df81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Airport::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Czyszczenie listy. </p>
+<p>Funkcja odpowiadajaca za wyczyszczenie listy jednokierunkowej </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00066">66</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a84ac464b9dd8df6f6c02fc9120bb1509"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Airport::clearbus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Czyszczenie listy. </p>
+<p>Funkcja odpowiadajaca za wyczyszczenie listy jednokierunkowej </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00180">180</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bed38a6b4c5d628eace8e16cebc0c7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Airport::depart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vehicle.html">Vehicle</a> *&#160;</td>
+          <td class="paramname"><em>plane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Samolot wylecial. </p>
+<p>Funkcja wyswietla komunikat, gdy samolot opusci lotnisko </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00138">138</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87accfa015c2933906eda526e3af9e4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Airport::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lotnisko puste. </p>
+<p>Funkcja sprawdza, czy lista jednokierunkowa jest pusta jesli tak zwraca true. </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00118">118</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3ebff829a43be737dbe8e940e747c77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Airport::full </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lotnisko pelne. </p>
+<p>Funkcja sprawdza, czy lista jednokierunkowa jest pelna (powyzej MAX_CAPACITY) jesli tak zwraca true. </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00110">110</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5df55c76c22c5d5df2d1d7fc2b9f6d6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Airport::land </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vehicle.html">Vehicle</a> *&#160;</td>
+          <td class="paramname"><em>plane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Samolot wyladowal. </p>
+<p>Funkcja wyswietla komunikat, gdy samolot wleci do "hangaru" </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00133">133</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0ba309520ef41af0938bf4ab1b7e516"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Airport::refuse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odmowa wylotu/przylotu. </p>
+<p>Funkcja wyswietla komunikat o odmowie wylotu/przylotu </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00105">105</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b86170851850c263982fd2f697cf1b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Airport::removeBus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Usuniecie autobusu z listy. </p>
+<p>Funkcja odpowiadajaca za usuniecie autobusu z listy jednokierunkowej </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00169">169</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad14b2b0c3f7ded352e82602cb8a75ad8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Airport::removePlane </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Usuniecie samolotu z listy. </p>
+<p>Funkcja odpowiadajaca za usuniecie samolotu z listy jednokierunkowej </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00055">55</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a127af0e0ad80afefcf4b3d27f9ca17aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Airport::runaway </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pas wolny. </p>
+<p>Funkcja sprawdza, czy lista jednokierunkowa reprezentujaca stan pasu jest pusta jesli tak zwraca true. </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00126">126</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a878f9374678c7aa3819b0e9a1564ede7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Airport::show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pokazanie zawartosci listy. </p>
+<p>Funkcja odpowiadajaca za pokazanie zawartosci listy jednokierunkowej </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8cpp_source.html#l00083">83</a> pliku <a class="el" href="_airport_8cpp_source.html">Airport.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="a57803f84582af728507a187254ec2d76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_plane.html">Plane</a> * Airport::back</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00102">102</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f9fda67c7ab98b222afe8f35e7069b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bus.html">Bus</a> * Airport::busback</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00104">104</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2378f4fecd2bca5a4cd3f1d3707a891"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bus.html">Bus</a>* Airport::busfront</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wskazniki na poczatek i koniec listy jednokierunkowej typu <a class="el" href="class_bus.html" title="Klasa reprezentujaca Autobus. ">Bus</a>. </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00104">104</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b2b810f6fd441ba86d1b1343b5a6809"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const sf::Vector2i Airport::busstopposition = { 80, 560 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00113">113</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad40fe2f08edd178df70b389208fe71b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Airport::count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Liczba elementow znajdujacych sie na liscie jednokierunkowej. </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00096">96</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4836ebca2db445195d42a74fc09262b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const sf::Vector2i Airport::drunawayposition = { 665,300 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00111">111</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0f40f6d1b8a37915041edc24943eca7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const sf::Vector2i Airport::drunawaysize = { 200, 120 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00112">112</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94813a13d52c0d5f0997225038339f67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_plane.html">Plane</a>* Airport::front</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wskazniki na poczatek i koniec listy jednokierunkowej typu <a class="el" href="class_plane.html" title="Klasa reprezentujaca obiekt samolotu na lotnisku. ">Plane</a>. </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00102">102</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a033a38990148ee790fac16aab81d0e5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const sf::Vector2i Airport::hangarposition = { 615, 185 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00107">107</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e9569a024e683a0b4104c1c31030800"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const sf::Vector2i Airport::hangarsize = { 50, 120 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00108">108</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a90cc2cf0b7fd17385ff1cb4c96c568c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const sf::Vector2i Airport::lrunawayposition = { 415, 300}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00109">109</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6eb9ac991c054cbd263b377e5570421e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const sf::Vector2i Airport::lrunawaysize = { 200, 120 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00110">110</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a38236f744f93cc780ffca8228f4412"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Airport::MAX_CAPACITY =8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maksymalna pojemnosc lotniska. </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00098">98</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8741024b47db6c2a19b44810c827f02c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Airport::nPlanes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Liczba obsluzonych przez lotnisko samolotow. </p>
+
+<p>Definicja w linii <a class="el" href="_airport_8h_source.html#l00100">100</a> pliku <a class="el" href="_airport_8h_source.html">Airport.h</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>FlightSim_v.3/<a class="el" href="_airport_8h_source.html">Airport.h</a></li>
+<li>FlightSim_v.3/<a class="el" href="_airport_8cpp_source.html">Airport.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_airport.html">Airport</a></li>
+    <li class="footer">Wygenerowano Pn, 15 cze 2015 19:56:59 dla FlightSim programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

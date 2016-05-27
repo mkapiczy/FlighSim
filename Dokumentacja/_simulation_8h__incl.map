@@ -1,0 +1,10 @@
+<map id="FlightSim_v.3/Simulation.h" name="FlightSim_v.3/Simulation.h">
+<area shape="rect" id="node2" href="$_engine_8h.html" title="Plik nagłowkowy klasy Engine. " alt="" coords="95,80,169,107"/>
+<area shape="rect" id="node3" href="$_graphic_engine_8h.html" title="Plik nagłówkowy klasy GraphicEngine. " alt="" coords="165,155,283,181"/>
+<area shape="rect" id="node5" href="$_plane_8h.html" title="Plik nagłówkowy klasy Plane. " alt="" coords="181,304,248,331"/>
+<area shape="rect" id="node6" href="$_wind_8h.html" title="Plik nagłówkowy klasy Wind. " alt="" coords="182,453,245,480"/>
+<area shape="rect" id="node8" href="$_bus_8h.html" title="Plik nagłówkowy klasy Bus. " alt="" coords="331,304,387,331"/>
+<area shape="rect" id="node9" href="$_my_plane_8h.html" title="Plik nagłówkowy klasy MyPlane. " alt="" coords="94,229,178,256"/>
+<area shape="rect" id="node4" href="$_airport_8h.html" title="Plik nagłowkowy klasy Airport. " alt="" coords="254,229,325,256"/>
+<area shape="rect" id="node7" href="$_vehicle_8h.html" title="Plik nagłówkowy klasy Vehicle. " alt="" coords="251,379,327,405"/>
+</map>

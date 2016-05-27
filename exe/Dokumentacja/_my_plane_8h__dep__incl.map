@@ -1,0 +1,10 @@
+<map id="MyPlane.h" name="MyPlane.h">
+<area shape="rect" id="node2" href="$_graphic_engine_8h.html" title="Plik nagłówkowy klasy GraphicEngine. " alt="" coords="167,80,285,107"/>
+<area shape="rect" id="node3" href="$_engine_8h.html" title="Plik nagłowkowy klasy Engine. " alt="" coords="92,155,165,181"/>
+<area shape="rect" id="node9" href="$_my_plane_8cpp.html" title="Plik źródłowy klasy MyPlane. " alt="" coords="310,80,409,107"/>
+<area shape="rect" id="node4" href="$_engine_8cpp.html" title="Plik źródłowy klasy Engine. " alt="" coords="137,304,224,331"/>
+<area shape="rect" id="node5" href="$_simulation_8h.html" title="Plik nagłówkowy klasy Simulation. " alt="" coords="241,229,336,256"/>
+<area shape="rect" id="node7" href="$_graphic_engine_8cpp.html" title="Plik źródłowy klasy GraphicEngine. " alt="" coords="399,304,531,331"/>
+<area shape="rect" id="node8" href="$_simulation_8cpp.html" title="Plik źródłowy klasy Simulation. " alt="" coords="5,304,113,331"/>
+<area shape="rect" id="node6" href="$_flight_sim__v_83_8cpp.html" title="FlightSim_v.3.cpp" alt="" coords="249,304,374,331"/>
+</map>

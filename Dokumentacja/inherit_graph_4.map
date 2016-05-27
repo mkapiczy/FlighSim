@@ -1,0 +1,6 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_vehicle.html" title="Abstrakcyjna klasa reprezentująca pojazd. " alt="" coords="5,31,71,57"/>
+<area shape="rect" id="node2" href="$class_bus.html" title="Klasa reprezentujaca Autobus. " alt="" coords="123,5,169,32"/>
+<area shape="rect" id="node3" href="$class_plane.html" title="Klasa reprezentujaca obiekt samolotu na lotnisku. " alt="" coords="119,56,173,83"/>
+<area shape="rect" id="node4" href="$class_my_plane.html" title="Klasa reprezentujaca obiekt samolotu podczas symulacji lotu. " alt="" coords="221,56,295,83"/>
+</map>

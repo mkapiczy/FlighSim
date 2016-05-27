@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>FlightSim: Dokumentacja klasy Bus</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FlightSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_bus.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Typy publiczne</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-attribs">Atrybuty publiczne</a> &#124;
+<a href="class_bus-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Bus</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa reprezentujaca Autobus.  
+ <a href="class_bus.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_bus_8h_source.html">Bus.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla Bus</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bus__inherit__graph.png" border="0" usemap="#_bus_inherit__map" alt="Inheritance graph"/></div>
+<map name="_bus_inherit__map" id="_bus_inherit__map">
+<area shape="rect" id="node2" href="class_vehicle.html" title="Abstrakcyjna klasa reprezentująca pojazd. " alt="" coords="5,5,71,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla Bus:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_bus__coll__graph.png" border="0" usemap="#_bus_coll__map" alt="Collaboration graph"/></div>
+<map name="_bus_coll__map" id="_bus_coll__map">
+<area shape="rect" id="node2" href="class_vehicle.html" title="Abstrakcyjna klasa reprezentująca pojazd. " alt="" coords="5,5,71,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Typy publiczne</h2></td></tr>
+<tr class="memitem:a33fe114dfc6c30273a279a3799393c34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bus.html#a33fe114dfc6c30273a279a3799393c34">BusState</a> { <a class="el" href="class_bus.html#a33fe114dfc6c30273a279a3799393c34a889221674d52ce15194e9773a06a6a7d">BUSTOLANDING</a>, 
+<a class="el" href="class_bus.html#a33fe114dfc6c30273a279a3799393c34aef2908e5e4a1a6570f0e1446590fbe59">BUSTODEPARTING</a>, 
+<a class="el" href="class_bus.html#a33fe114dfc6c30273a279a3799393c34af28cb0d88bb3d4ccd686a2b3651fca10">BUSFROMLANDING</a>, 
+<a class="el" href="class_bus.html#a33fe114dfc6c30273a279a3799393c34a816def11b71be703073c38f28c219c78">BUSFROMDEPARTING</a>
+ }</td></tr>
+<tr class="memdesc:a33fe114dfc6c30273a279a3799393c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typ wyliczeniowy okreslajacy stan obiektu klasy <a class="el" href="class_bus.html" title="Klasa reprezentujaca Autobus. ">Bus</a>.  <a href="class_bus.html#a33fe114dfc6c30273a279a3799393c34">Więcej...</a><br /></td></tr>
+<tr class="separator:a33fe114dfc6c30273a279a3799393c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:aacf35e62456128245a02db34334f9a3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bus.html#aacf35e62456128245a02db34334f9a3d">Bus</a> ()</td></tr>
+<tr class="memdesc:aacf35e62456128245a02db34334f9a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor domyślny.  <a href="#aacf35e62456128245a02db34334f9a3d">Więcej...</a><br /></td></tr>
+<tr class="separator:aacf35e62456128245a02db34334f9a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107981a604a1d45bcbfeb0513766ec8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bus.html#a107981a604a1d45bcbfeb0513766ec8c">Bus</a> (int initid, sf::Vector2f <a class="el" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a>)</td></tr>
+<tr class="memdesc:a107981a604a1d45bcbfeb0513766ec8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <a href="#a107981a604a1d45bcbfeb0513766ec8c">Więcej...</a><br /></td></tr>
+<tr class="separator:a107981a604a1d45bcbfeb0513766ec8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6194602b6a5a4fa87987f7c1adf35d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bus.html#aab6194602b6a5a4fa87987f7c1adf35d">~Bus</a> ()</td></tr>
+<tr class="memdesc:aab6194602b6a5a4fa87987f7c1adf35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <a href="#aab6194602b6a5a4fa87987f7c1adf35d">Więcej...</a><br /></td></tr>
+<tr class="separator:aab6194602b6a5a4fa87987f7c1adf35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e6bd0c97678457a9ce322caf853787"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bus.html#a11e6bd0c97678457a9ce322caf853787">move</a> ()</td></tr>
+<tr class="memdesc:a11e6bd0c97678457a9ce322caf853787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logika ruchu autobusu.  <a href="#a11e6bd0c97678457a9ce322caf853787">Więcej...</a><br /></td></tr>
+<tr class="separator:a11e6bd0c97678457a9ce322caf853787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_vehicle"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_vehicle')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_vehicle.html">Vehicle</a></td></tr>
+<tr class="memitem:abaad8187d9f2ede4fb8ea18de0a6764c inherit pub_methods_class_vehicle"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#abaad8187d9f2ede4fb8ea18de0a6764c">Vehicle</a> ()</td></tr>
+<tr class="separator:abaad8187d9f2ede4fb8ea18de0a6764c inherit pub_methods_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ab140c755b8e0e824d54117cf4546f inherit pub_methods_class_vehicle"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a61ab140c755b8e0e824d54117cf4546f">~Vehicle</a> ()</td></tr>
+<tr class="separator:a61ab140c755b8e0e824d54117cf4546f inherit pub_methods_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57825aaaffa4568d8aab9a440b9be689 inherit pub_methods_class_vehicle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a57825aaaffa4568d8aab9a440b9be689">accelerate</a> (double dv)</td></tr>
+<tr class="memdesc:a57825aaaffa4568d8aab9a440b9be689 inherit pub_methods_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przyśpiesz.  <a href="#a57825aaaffa4568d8aab9a440b9be689">Więcej...</a><br /></td></tr>
+<tr class="separator:a57825aaaffa4568d8aab9a440b9be689 inherit pub_methods_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1547c8d168425d794dd55eaa5a40968b inherit pub_methods_class_vehicle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a1547c8d168425d794dd55eaa5a40968b">decelerate</a> (double dv)</td></tr>
+<tr class="memdesc:a1547c8d168425d794dd55eaa5a40968b inherit pub_methods_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">PZwolnij.  <a href="#a1547c8d168425d794dd55eaa5a40968b">Więcej...</a><br /></td></tr>
+<tr class="separator:a1547c8d168425d794dd55eaa5a40968b inherit pub_methods_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atrybuty publiczne</h2></td></tr>
+<tr class="memitem:ae42e5b38880bb9abebdd26f7e56142c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bus.html">Bus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bus.html#ae42e5b38880bb9abebdd26f7e56142c9">next</a></td></tr>
+<tr class="memdesc:ae42e5b38880bb9abebdd26f7e56142c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na kolejny element listy jednokierunkowej elementow <a class="el" href="class_bus.html" title="Klasa reprezentujaca Autobus. ">Bus</a>.  <a href="#ae42e5b38880bb9abebdd26f7e56142c9">Więcej...</a><br /></td></tr>
+<tr class="separator:ae42e5b38880bb9abebdd26f7e56142c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec4f8bda203a6ee256117e3a773647f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_bus.html#a33fe114dfc6c30273a279a3799393c34">BusState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bus.html#abec4f8bda203a6ee256117e3a773647f">state</a></td></tr>
+<tr class="memdesc:abec4f8bda203a6ee256117e3a773647f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna typu BusState reprezentujaca aktualny stan obiektu klasy <a class="el" href="class_bus.html" title="Klasa reprezentujaca Autobus. ">Bus</a>.  <a href="#abec4f8bda203a6ee256117e3a773647f">Więcej...</a><br /></td></tr>
+<tr class="separator:abec4f8bda203a6ee256117e3a773647f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_vehicle"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_vehicle')"><img src="closed.png" alt="-"/>&#160;Atrybuty publiczne dziedziczone z <a class="el" href="class_vehicle.html">Vehicle</a></td></tr>
+<tr class="memitem:a26837a872f4141e1eef8710606512d80 inherit pub_attribs_class_vehicle"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a></td></tr>
+<tr class="memdesc:a26837a872f4141e1eef8710606512d80 inherit pub_attribs_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pozycja pojazdu.  <a href="#a26837a872f4141e1eef8710606512d80">Więcej...</a><br /></td></tr>
+<tr class="separator:a26837a872f4141e1eef8710606512d80 inherit pub_attribs_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bca1ebf9ea94acecc7cf35f2a6be35 inherit pub_attribs_class_vehicle"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a> = 0</td></tr>
+<tr class="memdesc:a53bca1ebf9ea94acecc7cf35f2a6be35 inherit pub_attribs_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prędkość  <a href="#a53bca1ebf9ea94acecc7cf35f2a6be35">Więcej...</a><br /></td></tr>
+<tr class="separator:a53bca1ebf9ea94acecc7cf35f2a6be35 inherit pub_attribs_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f686ad993a66d2bf08e68a18a35aaf3 inherit pub_attribs_class_vehicle"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> = 0</td></tr>
+<tr class="memdesc:a7f686ad993a66d2bf08e68a18a35aaf3 inherit pub_attribs_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obrót.  <a href="#a7f686ad993a66d2bf08e68a18a35aaf3">Więcej...</a><br /></td></tr>
+<tr class="separator:a7f686ad993a66d2bf08e68a18a35aaf3 inherit pub_attribs_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7834eaf6f96abf5b8800f7bda0d9a30 inherit pub_attribs_class_vehicle"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#ac7834eaf6f96abf5b8800f7bda0d9a30">scale</a></td></tr>
+<tr class="memdesc:ac7834eaf6f96abf5b8800f7bda0d9a30 inherit pub_attribs_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skala do rysowania.  <a href="#ac7834eaf6f96abf5b8800f7bda0d9a30">Więcej...</a><br /></td></tr>
+<tr class="separator:ac7834eaf6f96abf5b8800f7bda0d9a30 inherit pub_attribs_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e74c080de20a4925bc6e71c968f5bf inherit pub_attribs_class_vehicle"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a47e74c080de20a4925bc6e71c968f5bf">windDirection</a> = 0</td></tr>
+<tr class="memdesc:a47e74c080de20a4925bc6e71c968f5bf inherit pub_attribs_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czujnik kierunku wiatru.  <a href="#a47e74c080de20a4925bc6e71c968f5bf">Więcej...</a><br /></td></tr>
+<tr class="separator:a47e74c080de20a4925bc6e71c968f5bf inherit pub_attribs_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e093b93ad03924a10c6a375847d7149 inherit pub_attribs_class_vehicle"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a4e093b93ad03924a10c6a375847d7149">windSpeed</a> = 0</td></tr>
+<tr class="memdesc:a4e093b93ad03924a10c6a375847d7149 inherit pub_attribs_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czujnik prędkości wiatru.  <a href="#a4e093b93ad03924a10c6a375847d7149">Więcej...</a><br /></td></tr>
+<tr class="separator:a4e093b93ad03924a10c6a375847d7149 inherit pub_attribs_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7421a7a2d98b4ec6dfabd1041261aa03 inherit pub_attribs_class_vehicle"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a7421a7a2d98b4ec6dfabd1041261aa03">id</a></td></tr>
+<tr class="memdesc:a7421a7a2d98b4ec6dfabd1041261aa03 inherit pub_attribs_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id pojazdu.  <a href="#a7421a7a2d98b4ec6dfabd1041261aa03">Więcej...</a><br /></td></tr>
+<tr class="separator:a7421a7a2d98b4ec6dfabd1041261aa03 inherit pub_attribs_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5cac815a442c4acdf0c2a1523e48fc inherit pub_attribs_class_vehicle"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a4c5cac815a442c4acdf0c2a1523e48fc">gravity</a> = 9.81</td></tr>
+<tr class="memdesc:a4c5cac815a442c4acdf0c2a1523e48fc inherit pub_attribs_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przyśpieszenie ziemskie.  <a href="#a4c5cac815a442c4acdf0c2a1523e48fc">Więcej...</a><br /></td></tr>
+<tr class="separator:a4c5cac815a442c4acdf0c2a1523e48fc inherit pub_attribs_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6defa4cddf96fa726887017bf0f213f9 inherit pub_attribs_class_vehicle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a6defa4cddf96fa726887017bf0f213f9">fuelalarm</a> = false</td></tr>
+<tr class="memdesc:a6defa4cddf96fa726887017bf0f213f9 inherit pub_attribs_class_vehicle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna odpowiadajaca za sygnalizacje niskiego stanu paliwa.  <a href="#a6defa4cddf96fa726887017bf0f213f9">Więcej...</a><br /></td></tr>
+<tr class="separator:a6defa4cddf96fa726887017bf0f213f9 inherit pub_attribs_class_vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa reprezentujaca Autobus. </p>
+<p>Definicja klasy <a class="el" href="class_bus.html" title="Klasa reprezentujaca Autobus. ">Bus</a> </p>
+
+<p>Definicja w linii <a class="el" href="_bus_8h_source.html#l00014">14</a> pliku <a class="el" href="_bus_8h_source.html">Bus.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja składowych wyliczanych</h2>
+<a class="anchor" id="a33fe114dfc6c30273a279a3799393c34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_bus.html#a33fe114dfc6c30273a279a3799393c34">Bus::BusState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Typ wyliczeniowy okreslajacy stan obiektu klasy <a class="el" href="class_bus.html" title="Klasa reprezentujaca Autobus. ">Bus</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a class="anchor" id="a33fe114dfc6c30273a279a3799393c34a889221674d52ce15194e9773a06a6a7d"></a>BUSTOLANDING&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a33fe114dfc6c30273a279a3799393c34aef2908e5e4a1a6570f0e1446590fbe59"></a>BUSTODEPARTING&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a33fe114dfc6c30273a279a3799393c34af28cb0d88bb3d4ccd686a2b3651fca10"></a>BUSFROMLANDING&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a33fe114dfc6c30273a279a3799393c34a816def11b71be703073c38f28c219c78"></a>BUSFROMDEPARTING&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definicja w linii <a class="el" href="_bus_8h_source.html#l00033">33</a> pliku <a class="el" href="_bus_8h_source.html">Bus.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="aacf35e62456128245a02db34334f9a3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bus::Bus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor domyślny. </p>
+
+<p>Definicja w linii <a class="el" href="_bus_8cpp_source.html#l00012">12</a> pliku <a class="el" href="_bus_8cpp_source.html">Bus.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a107981a604a1d45bcbfeb0513766ec8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bus::Bus </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>initid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2f&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor. </p>
+
+<p>Definicja w linii <a class="el" href="_bus_8cpp_source.html#l00016">16</a> pliku <a class="el" href="_bus_8cpp_source.html">Bus.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab6194602b6a5a4fa87987f7c1adf35d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bus::~Bus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor. </p>
+
+<p>Definicja w linii <a class="el" href="_bus_8cpp_source.html#l00024">24</a> pliku <a class="el" href="_bus_8cpp_source.html">Bus.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a11e6bd0c97678457a9ce322caf853787"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bus::move </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logika ruchu autobusu. </p>
+<p>Funkcja odpowiadąjaca za logikę poruszania sie autobusu po lotnisku </p>
+<p>Instancja klasy <a class="el" href="class_airport.html" title="Klasa reprezentujaca lotnisko. ">Airport</a></p>
+<p>Zmienna pomocnicza do skalowania prędkości</p>
+<p>Logika ruchu autobusu w kierunku "hangaru" po pasie do ladowania</p>
+<p>Logika ruchu autobusu od "hangaru" po pasie do ladowania</p>
+<p>Logika ruchu autobusu w kierunku hangary po pasie do wylotow </p>
+
+<p>Implementuje <a class="el" href="class_vehicle.html#ac1ef28b5e0276f2dfa04bc0199302093">Vehicle</a>.</p>
+
+<p>Definicja w linii <a class="el" href="_bus_8cpp_source.html#l00028">28</a> pliku <a class="el" href="_bus_8cpp_source.html">Bus.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="ae42e5b38880bb9abebdd26f7e56142c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bus.html">Bus</a>* Bus::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wskaźnik na kolejny element listy jednokierunkowej elementow <a class="el" href="class_bus.html" title="Klasa reprezentujaca Autobus. ">Bus</a>. </p>
+
+<p>Definicja w linii <a class="el" href="_bus_8h_source.html#l00030">30</a> pliku <a class="el" href="_bus_8h_source.html">Bus.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abec4f8bda203a6ee256117e3a773647f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bus.html#a33fe114dfc6c30273a279a3799393c34">BusState</a> Bus::state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zmienna typu BusState reprezentujaca aktualny stan obiektu klasy <a class="el" href="class_bus.html" title="Klasa reprezentujaca Autobus. ">Bus</a>. </p>
+
+<p>Definicja w linii <a class="el" href="_bus_8h_source.html#l00040">40</a> pliku <a class="el" href="_bus_8h_source.html">Bus.h</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>FlightSim_v.3/<a class="el" href="_bus_8h_source.html">Bus.h</a></li>
+<li>FlightSim_v.3/<a class="el" href="_bus_8cpp_source.html">Bus.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_bus.html">Bus</a></li>
+    <li class="footer">Wygenerowano Pn, 15 cze 2015 19:56:59 dla FlightSim programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

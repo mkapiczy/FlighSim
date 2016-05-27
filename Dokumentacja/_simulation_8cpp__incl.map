@@ -1,0 +1,13 @@
+<map id="FlightSim_v.3/Simulation.cpp" name="FlightSim_v.3/Simulation.cpp">
+<area shape="rect" id="node2" href="$stdafx_8h.html" title="stdafx.h" alt="" coords="601,80,669,107"/>
+<area shape="rect" id="node17" href="$_simulation_8h.html" title="Plik nagłówkowy klasy Simulation. " alt="" coords="1481,80,1575,107"/>
+<area shape="rect" id="node18" href="$_engine_8h.html" title="Plik nagłowkowy klasy Engine. " alt="" coords="1449,155,1522,181"/>
+<area shape="rect" id="node7" href="$targetver_8h.html" title="targetver.h" alt="" coords="1247,155,1329,181"/>
+<area shape="rect" id="node19" href="$_graphic_engine_8h.html" title="Plik nagłówkowy klasy GraphicEngine. " alt="" coords="1523,229,1642,256"/>
+<area shape="rect" id="node21" href="$_plane_8h.html" title="Plik nagłówkowy klasy Plane. " alt="" coords="1548,379,1615,405"/>
+<area shape="rect" id="node22" href="$_wind_8h.html" title="Plik nagłówkowy klasy Wind. " alt="" coords="1549,528,1611,555"/>
+<area shape="rect" id="node24" href="$_bus_8h.html" title="Plik nagłówkowy klasy Bus. " alt="" coords="1697,379,1753,405"/>
+<area shape="rect" id="node25" href="$_my_plane_8h.html" title="Plik nagłówkowy klasy MyPlane. " alt="" coords="1461,304,1545,331"/>
+<area shape="rect" id="node20" href="$_airport_8h.html" title="Plik nagłowkowy klasy Airport. " alt="" coords="1621,304,1691,331"/>
+<area shape="rect" id="node23" href="$_vehicle_8h.html" title="Plik nagłówkowy klasy Vehicle. " alt="" coords="1618,453,1694,480"/>
+</map>

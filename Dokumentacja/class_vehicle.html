@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>FlightSim: Dokumentacja klasy Vehicle</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FlightSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_vehicle.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-attribs">Atrybuty publiczne</a> &#124;
+<a href="class_vehicle-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Vehicle<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Abstrakcyjna klasa reprezentująca pojazd.  
+ <a href="class_vehicle.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla Vehicle</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vehicle__inherit__graph.png" border="0" usemap="#_vehicle_inherit__map" alt="Inheritance graph"/></div>
+<map name="_vehicle_inherit__map" id="_vehicle_inherit__map">
+<area shape="rect" id="node2" href="class_bus.html" title="Klasa reprezentujaca Autobus. " alt="" coords="5,80,51,107"/><area shape="rect" id="node3" href="class_plane.html" title="Klasa reprezentujaca obiekt samolotu na lotnisku. " alt="" coords="75,80,130,107"/><area shape="rect" id="node4" href="class_my_plane.html" title="Klasa reprezentujaca obiekt samolotu podczas symulacji lotu. " alt="" coords="66,155,139,181"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:abaad8187d9f2ede4fb8ea18de0a6764c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#abaad8187d9f2ede4fb8ea18de0a6764c">Vehicle</a> ()</td></tr>
+<tr class="separator:abaad8187d9f2ede4fb8ea18de0a6764c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ab140c755b8e0e824d54117cf4546f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a61ab140c755b8e0e824d54117cf4546f">~Vehicle</a> ()</td></tr>
+<tr class="separator:a61ab140c755b8e0e824d54117cf4546f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57825aaaffa4568d8aab9a440b9be689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a57825aaaffa4568d8aab9a440b9be689">accelerate</a> (double dv)</td></tr>
+<tr class="memdesc:a57825aaaffa4568d8aab9a440b9be689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przyśpiesz.  <a href="#a57825aaaffa4568d8aab9a440b9be689">Więcej...</a><br /></td></tr>
+<tr class="separator:a57825aaaffa4568d8aab9a440b9be689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1547c8d168425d794dd55eaa5a40968b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a1547c8d168425d794dd55eaa5a40968b">decelerate</a> (double dv)</td></tr>
+<tr class="memdesc:a1547c8d168425d794dd55eaa5a40968b"><td class="mdescLeft">&#160;</td><td class="mdescRight">PZwolnij.  <a href="#a1547c8d168425d794dd55eaa5a40968b">Więcej...</a><br /></td></tr>
+<tr class="separator:a1547c8d168425d794dd55eaa5a40968b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ef28b5e0276f2dfa04bc0199302093"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#ac1ef28b5e0276f2dfa04bc0199302093">move</a> ()=0</td></tr>
+<tr class="memdesc:ac1ef28b5e0276f2dfa04bc0199302093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czysto wirtualna funkcja ruchu pojazdu.  <a href="#ac1ef28b5e0276f2dfa04bc0199302093">Więcej...</a><br /></td></tr>
+<tr class="separator:ac1ef28b5e0276f2dfa04bc0199302093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atrybuty publiczne</h2></td></tr>
+<tr class="memitem:a26837a872f4141e1eef8710606512d80"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a26837a872f4141e1eef8710606512d80">position</a></td></tr>
+<tr class="memdesc:a26837a872f4141e1eef8710606512d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pozycja pojazdu.  <a href="#a26837a872f4141e1eef8710606512d80">Więcej...</a><br /></td></tr>
+<tr class="separator:a26837a872f4141e1eef8710606512d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bca1ebf9ea94acecc7cf35f2a6be35"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a53bca1ebf9ea94acecc7cf35f2a6be35">velocity</a> = 0</td></tr>
+<tr class="memdesc:a53bca1ebf9ea94acecc7cf35f2a6be35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prędkość  <a href="#a53bca1ebf9ea94acecc7cf35f2a6be35">Więcej...</a><br /></td></tr>
+<tr class="separator:a53bca1ebf9ea94acecc7cf35f2a6be35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f686ad993a66d2bf08e68a18a35aaf3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a7f686ad993a66d2bf08e68a18a35aaf3">rotation</a> = 0</td></tr>
+<tr class="memdesc:a7f686ad993a66d2bf08e68a18a35aaf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obrót.  <a href="#a7f686ad993a66d2bf08e68a18a35aaf3">Więcej...</a><br /></td></tr>
+<tr class="separator:a7f686ad993a66d2bf08e68a18a35aaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7834eaf6f96abf5b8800f7bda0d9a30"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#ac7834eaf6f96abf5b8800f7bda0d9a30">scale</a></td></tr>
+<tr class="memdesc:ac7834eaf6f96abf5b8800f7bda0d9a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skala do rysowania.  <a href="#ac7834eaf6f96abf5b8800f7bda0d9a30">Więcej...</a><br /></td></tr>
+<tr class="separator:ac7834eaf6f96abf5b8800f7bda0d9a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e74c080de20a4925bc6e71c968f5bf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a47e74c080de20a4925bc6e71c968f5bf">windDirection</a> = 0</td></tr>
+<tr class="memdesc:a47e74c080de20a4925bc6e71c968f5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czujnik kierunku wiatru.  <a href="#a47e74c080de20a4925bc6e71c968f5bf">Więcej...</a><br /></td></tr>
+<tr class="separator:a47e74c080de20a4925bc6e71c968f5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e093b93ad03924a10c6a375847d7149"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a4e093b93ad03924a10c6a375847d7149">windSpeed</a> = 0</td></tr>
+<tr class="memdesc:a4e093b93ad03924a10c6a375847d7149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czujnik prędkości wiatru.  <a href="#a4e093b93ad03924a10c6a375847d7149">Więcej...</a><br /></td></tr>
+<tr class="separator:a4e093b93ad03924a10c6a375847d7149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7421a7a2d98b4ec6dfabd1041261aa03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a7421a7a2d98b4ec6dfabd1041261aa03">id</a></td></tr>
+<tr class="memdesc:a7421a7a2d98b4ec6dfabd1041261aa03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id pojazdu.  <a href="#a7421a7a2d98b4ec6dfabd1041261aa03">Więcej...</a><br /></td></tr>
+<tr class="separator:a7421a7a2d98b4ec6dfabd1041261aa03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5cac815a442c4acdf0c2a1523e48fc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a4c5cac815a442c4acdf0c2a1523e48fc">gravity</a> = 9.81</td></tr>
+<tr class="memdesc:a4c5cac815a442c4acdf0c2a1523e48fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przyśpieszenie ziemskie.  <a href="#a4c5cac815a442c4acdf0c2a1523e48fc">Więcej...</a><br /></td></tr>
+<tr class="separator:a4c5cac815a442c4acdf0c2a1523e48fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6defa4cddf96fa726887017bf0f213f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle.html#a6defa4cddf96fa726887017bf0f213f9">fuelalarm</a> = false</td></tr>
+<tr class="memdesc:a6defa4cddf96fa726887017bf0f213f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna odpowiadajaca za sygnalizacje niskiego stanu paliwa.  <a href="#a6defa4cddf96fa726887017bf0f213f9">Więcej...</a><br /></td></tr>
+<tr class="separator:a6defa4cddf96fa726887017bf0f213f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Abstrakcyjna klasa reprezentująca pojazd. </p>
+<p>Definicja klasy <a class="el" href="class_vehicle.html" title="Abstrakcyjna klasa reprezentująca pojazd. ">Vehicle</a> </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8h_source.html#l00014">14</a> pliku <a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="abaad8187d9f2ede4fb8ea18de0a6764c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vehicle::Vehicle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_vehicle_8cpp_source.html#l00011">11</a> pliku <a class="el" href="_vehicle_8cpp_source.html">Vehicle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a61ab140c755b8e0e824d54117cf4546f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vehicle::~Vehicle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_vehicle_8cpp_source.html#l00016">16</a> pliku <a class="el" href="_vehicle_8cpp_source.html">Vehicle.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a57825aaaffa4568d8aab9a440b9be689"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vehicle::accelerate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Przyśpiesz. </p>
+<p>Funkcja odpowiada za wzrost prędkości pojazdu </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8cpp_source.html#l00021">21</a> pliku <a class="el" href="_vehicle_8cpp_source.html">Vehicle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1547c8d168425d794dd55eaa5a40968b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vehicle::decelerate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PZwolnij. </p>
+<p>Funkcja odpowiada za spadek prędkości pojazdu </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8cpp_source.html#l00026">26</a> pliku <a class="el" href="_vehicle_8cpp_source.html">Vehicle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1ef28b5e0276f2dfa04bc0199302093"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Vehicle::move </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Czysto wirtualna funkcja ruchu pojazdu. </p>
+
+<p>Implementowany w <a class="el" href="class_bus.html#a11e6bd0c97678457a9ce322caf853787">Bus</a> i <a class="el" href="class_plane.html#a3a07da89ca85ad949a3db1cc3aaa5acd">Plane</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="a6defa4cddf96fa726887017bf0f213f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Vehicle::fuelalarm = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zmienna odpowiadajaca za sygnalizacje niskiego stanu paliwa. </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8h_source.html#l00036">36</a> pliku <a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c5cac815a442c4acdf0c2a1523e48fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vehicle::gravity = 9.81</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Przyśpieszenie ziemskie. </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8h_source.html#l00034">34</a> pliku <a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7421a7a2d98b4ec6dfabd1041261aa03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Vehicle::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Id pojazdu. </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8h_source.html#l00032">32</a> pliku <a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a26837a872f4141e1eef8710606512d80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f Vehicle::position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pozycja pojazdu. </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8h_source.html#l00020">20</a> pliku <a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f686ad993a66d2bf08e68a18a35aaf3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vehicle::rotation = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obrót. </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8h_source.html#l00024">24</a> pliku <a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7834eaf6f96abf5b8800f7bda0d9a30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vehicle::scale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Skala do rysowania. </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8h_source.html#l00026">26</a> pliku <a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a53bca1ebf9ea94acecc7cf35f2a6be35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vehicle::velocity = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prędkość </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8h_source.html#l00022">22</a> pliku <a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47e74c080de20a4925bc6e71c968f5bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vehicle::windDirection = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Czujnik kierunku wiatru. </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8h_source.html#l00028">28</a> pliku <a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e093b93ad03924a10c6a375847d7149"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vehicle::windSpeed = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Czujnik prędkości wiatru. </p>
+
+<p>Definicja w linii <a class="el" href="_vehicle_8h_source.html#l00030">30</a> pliku <a class="el" href="_vehicle_8h_source.html">Vehicle.h</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>FlightSim_v.3/<a class="el" href="_vehicle_8h_source.html">Vehicle.h</a></li>
+<li>FlightSim_v.3/<a class="el" href="_vehicle_8cpp_source.html">Vehicle.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_vehicle.html">Vehicle</a></li>
+    <li class="footer">Wygenerowano Pn, 15 cze 2015 19:56:59 dla FlightSim programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
